@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     
      
-     
+  
 
     
     override func viewDidLoad() {
@@ -28,16 +28,15 @@ class ViewController: UIViewController {
     
     
     @IBAction func actionButtonTapped(_ sender: UIButton) {
-        nameLabel.text = nameTextField.text
-        nameTextField.resignFirstResponder()
+//        nameLabel.text = nameTextField.text
+//        nameTextField.resignFirstResponder()
+        var y = nameTextField.text ?? ""
+      
+        nameLabel.text = y
+        
     
         
 //        class ViewController: UIViewController, UITextFieldDelegate {
-//
-//            class ViewController: UIViewController, UITextFieldDelegate {
-//
-//
-//                }
 //            }
         }
     }
